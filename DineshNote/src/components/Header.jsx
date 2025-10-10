@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import { LuNotebook } from "react-icons/lu";
+import { RiChatAiLine } from "react-icons/ri";
+import { FaPlus } from "react-icons/fa";
+import { IoMdLogIn } from "react-icons/io";
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-black shadow-md">
@@ -15,42 +19,40 @@ const Header = () => {
         {/* Navigation */}
         <ul className="hidden md:flex space-x-5 text-sm text-gray-300 font-medium">
           <li>
-            <a href="/#about" className="hover:text-yellow-400 cursor-pointer">
-              About Me
+            <a
+              href="/#about"
+              className="flex items-center gap-1 hover:text-yellow-400 cursor-pointer"
+            >
+              <LuNotebook />
+              My Note
             </a>
           </li>
           <li>
-            <a href="/#skills" className="hover:text-yellow-400 cursor-pointer">
-              Skills
+            <a
+              href="/#skills"
+              className="flex items-center gap-1 hover:text-yellow-400 cursor-pointer"
+            >
+              <RiChatAiLine />
+              AI Chat
             </a>
           </li>
           <li>
             <a
               href="/#education"
-              className="hover:text-yellow-400 cursor-pointer"
+              className="flex items-center gap-1 hover:text-yellow-400 cursor-pointer"
             >
-              Education
+              <FaPlus />
+              Create
             </a>
           </li>
-          <li>
-            <Link
-              to="/projects"
-              className="hover:text-yellow-400 cursor-pointer"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/blogs" className="hover:text-yellow-400 cursor-pointer">
-              Blogs
-            </Link>
-          </li>
+
           <li>
             <a
               href="/#contact"
-              className="hover:text-yellow-400 cursor-pointer"
+              className="flex items-center gap-1 hover:text-yellow-400 cursor-pointer"
             >
-              Contact
+              <IoMdLogIn />
+              Login
             </a>
           </li>
         </ul>

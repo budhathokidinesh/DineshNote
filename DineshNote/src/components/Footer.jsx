@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo / Store Name */}
           <div className="text-center">
             <h2 className="text-2xl font-bold text-slate-100 mb-3">
-              Dinesh Budhathoki
+              DineshNote
             </h2>
             <p className="text-sm text-gray-400">
               Full Stack Developer specialised with MERN stack.
@@ -23,13 +23,13 @@ const Footer = () => {
             <ul className="space-y-1 text-md text-gray-300">
               <li>
                 <Link to="/blogs" className="hover:text-yellow-400">
-                  Blogs
+                  My Note
                 </Link>
               </li>
               <li className="hover:text-yellow-400 cursor-pointer">Skills</li>
               <li>
                 <Link to="/projects" className="hover:text-yellow-400">
-                  Projects
+                  AI Chat
                 </Link>
               </li>
               <li className="hover:text-yellow-400 cursor-pointer">Contact</li>
