@@ -16,7 +16,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Navigation */}
+        {/* All the navigation links are here  */}
         <ul className="hidden md:flex space-x-5 text-sm text-gray-300 font-medium">
           <li>
             <a
@@ -56,8 +56,6 @@ const Header = () => {
             </a>
           </li>
         </ul>
-
-        {/* Mobile Menu (optional for future) */}
       </div>
     </header>
   );
