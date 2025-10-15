@@ -5,6 +5,7 @@ import { FaUpload } from "react-icons/fa";
 const Hero = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
+  //This is for handling the uploaded pdf
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (file && file.type === "application/pdf") {
@@ -16,7 +17,7 @@ const Hero = () => {
 
   return (
     <div className="h-[80vh] flex flex-col md:flex-row bg-gray-950 text-gray-200">
-      {/* Left: PDF Upload Section */}
+      {/* This is for uploading the pdf  */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 border-r border-gray-800">
         <h2 className="text-xl font-semibold mb-4">📂 Upload PDF</h2>
 
@@ -40,7 +41,7 @@ const Hero = () => {
         )}
       </div>
 
-      {/* Right: Chat Section */}
+      {/* This is for chat  */}
       <div className="w-full md:w-1/2 flex flex-col justify-between p-6">
         <div className="flex-1 overflow-y-auto border border-gray-800 rounded-lg p-4 mb-4 bg-gray-900">
           <p className="text-gray-400 text-sm italic">
