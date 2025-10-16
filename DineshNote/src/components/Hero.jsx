@@ -45,14 +45,14 @@ const Hero = () => {
       <div className="w-full md:w-1/2 flex flex-col justify-between p-6">
         <div className="flex-1 overflow-y-auto border border-gray-800 rounded-lg p-4 mb-4 bg-gray-900">
           <p className="text-gray-400 text-sm italic">
-            💬 AI chat about your uploaded PDF will appear here...
+            Your chat with AI will appear here..
           </p>
         </div>
 
         <div className="flex">
           <input
             type="text"
-            placeholder="Ask something about your PDF..."
+            placeholder="You can ask about your pdf"
             className="flex-1 p-2 rounded-l-lg bg-gray-800 border border-gray-700 outline-none focus:ring-2 focus:ring-yellow-400 text-sm"
           />
           <button className="px-4 bg-yellow-500 text-black rounded-r-lg font-semibold hover:bg-yellow-400 transition">
